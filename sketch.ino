@@ -15,7 +15,6 @@ unsigned int flagv = 0;  // VSPI
 int ch = 45;
 int ch1 = 45;
 
-ezButton toggleSwitch(33);
 
 // Вспомогательная функция для плавного изменения (оставлена для справки)
 void two() {
@@ -47,7 +46,6 @@ void setup() {
   esp_wifi_deinit();
   esp_wifi_disconnect();
   
-  toggleSwitch.setDebounceTime(50);
 
   initHP();
   initSP();
