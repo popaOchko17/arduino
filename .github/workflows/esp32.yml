@@ -36,6 +36,8 @@ jobs:
         # Install libraries
         arduino-cli lib install "ArduinoJson"
         arduino-cli lib install "RTClib"
+        arduino-cli lib install "RF24"
+      
         
         # Compile firmware
         mv *.ino arduino.ino
